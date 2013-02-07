@@ -15,7 +15,7 @@ public class StudentTest {
 	
 	@Test (expected = NullPointerException.class)
 	public void nameNotNullTest() {
-		s = new Student("sd ", 5);
+		s = new Student(null, 5);
 	}
 	
 	@Test (expected = IllegalArgumentException.class)
