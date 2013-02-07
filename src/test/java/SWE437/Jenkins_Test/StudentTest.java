@@ -18,14 +18,6 @@ public class StudentTest {
 		s = new Student(null, 5);
 	}
 	
-	/*
-	 * SWE437 Students, as an example remove this student and 
-	 * add a new student in this junit case that does not satisfy 
-	 * the requirements
-	 * 
-	 * Ex: Student Paul = new Student("Paul", 437)
-	 */
-	
 	@Test (expected = IllegalArgumentException.class)
 	public void nameNotLegalTest() {
 		s = new Student("", 5);
