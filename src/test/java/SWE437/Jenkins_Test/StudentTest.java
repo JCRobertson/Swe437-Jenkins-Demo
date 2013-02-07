@@ -13,6 +13,14 @@ public class StudentTest {
 	public Student s1;
 	public Student s2;
 	
+	/*
+	 * SWE437 Students, as an example remove this student and 
+	 * add a new student in this junit case that does not satisfy 
+	 * the requirements
+	 * 
+	 * Ex: Student Paul = new Student("Paul", 437)
+	 */
+	
 	@Test (expected = NullPointerException.class)
 	public void nameNotNullTest() {
 		s = new Student(null, 5);
