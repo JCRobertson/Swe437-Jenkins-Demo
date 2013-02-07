@@ -15,7 +15,7 @@ public class StudentTest {
 	
 	@Test (expected = IllegalArgumentException.class)
 	public void nameNotLegalTest() {
-		s = new Student("", 5);
+		s = new Student("james", 5);
 	}
 	
 	@Test (expected = IllegalArgumentException.class)
