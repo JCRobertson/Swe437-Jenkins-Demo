@@ -13,6 +13,12 @@ public class StudentTest {
 	public Student s1;
 	public Student s2;
 	
+	@Test
+	public void newFailingTest() {
+		// Instructor special!
+		assertTrue(false);
+	}
+
 	@Test (expected = IllegalArgumentException.class)
 	public void nameNotLegalTest() {
 		s = new Student("", 5);
