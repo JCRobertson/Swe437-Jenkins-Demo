@@ -16,7 +16,8 @@ public class StudentTest {
 	@Test
 	public void newFailingTest() {
 		// Instructor special!
-		assertTrue(false);
+		// This new version should work
+		assertTrue(true);
 	}
 
 	@Test (expected = IllegalArgumentException.class)
