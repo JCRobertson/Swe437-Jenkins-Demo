@@ -108,6 +108,7 @@ public class StudentTest {
 	
 	@Test(expected=NullPointerException.class)
 	public void nullNumberArgumentTest(){
-		s = new Student("Drew", null);
+		s = new Student( "Drew", 42);
+		assertEquals( s.equals( null) );
 	}
 }
