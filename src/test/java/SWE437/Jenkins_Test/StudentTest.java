@@ -18,7 +18,8 @@ public class StudentTest {
 		// Instructor special!
 		// This new version should work
 		// Let's fail again!
-		assertTrue(2==(1+1+1));
+		// And now fixing it.
+		assertTrue(3==(1+1+1));
 	}
 
 	@Test (expected = IllegalArgumentException.class)
@@ -105,12 +106,5 @@ public class StudentTest {
 	public void toStringTest(){
 		s = new Student("Paul", 437);
 		assertEquals("Paul 437", s.toString());
-	}
-	
-	@Test
-	public void nullNumberArgumentTest(){
-		s1 = new Student( "Drew", 42);
-		s2 = new Student( "Drew", 42);
-		assertEquals( s1.equals( s2 ), true );
 	}
 }
