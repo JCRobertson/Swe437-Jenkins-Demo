@@ -28,10 +28,11 @@ public class Student {
 				throw new IllegalArgumentException();
 			this.name = name;
 			this.favoriteNumber = favoriteNumber;
+			breakBuild++;
 		}
 		
 		public String getName() {
-			return name;
+			return "Hello";
 		}
 
 		public int getFavoriteNumber() {
