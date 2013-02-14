@@ -106,9 +106,10 @@ public class StudentTest {
 		assertEquals("Paul 437", s.toString());
 	}
 	
-	@Test(expected=NullPointerException.class)
+	@Test
 	public void nullNumberArgumentTest(){
-		s = new Student( "Drew", 42);
-		assertEquals( s.equals( null) );
+		s1 = new Student( "Drew", 42);
+		s2 = new Student( "Drew", 42);
+		assertEquals( s1.equals( s2 ) );
 	}
 }
