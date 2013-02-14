@@ -110,6 +110,6 @@ public class StudentTest {
 	public void nullNumberArgumentTest(){
 		s1 = new Student( "Drew", 42);
 		s2 = new Student( "Drew", 42);
-		assertEquals( s1.equals( s2 ) );
+		assertEquals( s1.equals( s2 ), true );
 	}
 }
