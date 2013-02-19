@@ -35,7 +35,7 @@ public class StudentTest {
 	@Test
 	public void studentNameGetter(){
 		s = new Student("James", 12);
-		assertEquals("James", s.getName());
+		assertEquals("Jackie", s.getName());
 	}
 
 	@Test
