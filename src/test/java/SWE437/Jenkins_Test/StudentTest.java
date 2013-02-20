@@ -14,6 +14,11 @@ public class StudentTest {
 	public Student s2;
 
 	@Test
+	public void {
+		assertTrue('s');
+	}
+	
+	@Test
 	public void newFailingTest() {
 		// Instructor special!
 		// This new version should work
@@ -111,4 +116,5 @@ public class StudentTest {
 	public void numberOverFlow(){
 		s = new Student("Joe", 2147483647 + 1);
 	}
+
 }
