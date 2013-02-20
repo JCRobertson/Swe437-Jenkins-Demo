@@ -12,10 +12,10 @@ public class StudentTest {
 	public Student s;
 	public Student s1;
 	public Student s2;
-
+	
 	@Test
 	public void {
-		assertTrue('s');
+		assertTrue(true);
 	}
 	
 	@Test
@@ -31,12 +31,12 @@ public class StudentTest {
 	public void nameNotLegalTest() {
 		s = new Student("", 5);
 	}
-
+	
 	@Test (expected = IllegalArgumentException.class)
 	public void numberNotLessThanZero(){
 		s = new Student("Joe", -999);
 	}
-
+	
 	@Test
 	public void studentNameGetter(){
 		s = new Student("James", 12);
@@ -48,26 +48,26 @@ public class StudentTest {
 		s = new Student("James", 12);
 		assertEquals(12, s.getFavoriteNumber());
 	}
-
+	
 	@Test
 	public void equalsSymmetryTest(){
 		s = new Student("James", 12);
 		s1 = new Student("James", 12);
 		assertTrue(s.equals(s1));
 		assertTrue(s1.equals(s));
-
+		
 		s1 = new Student("James", 13);
 		assertFalse(s.equals(s1));
 		assertFalse(s1.equals(s));
 	}
-
+	
 	@Test
 	public void equalsReflexivityTest(){
 		s = new Student("James", 12);
 		s1 = new Student("James", 12);
 		assertTrue(s.equals(s1));
 	}
-
+	
 	@Test
 	public void equalsTransitivityTest(){
 		s = new Student("James", 13);
@@ -77,20 +77,20 @@ public class StudentTest {
 		assertTrue(s1.equals(s2));
 		assertTrue(s.equals(s2));
 	}
-
+	
 	@Test
 	public void equalsNotStudentTest(){
 		s = new Student("Paul", 76);
 		assertFalse(s.equals("Paul"));
 	}
-
+	
 	@Test
 	public void notEqualTest(){
 		s = new Student("Paul", 437);
 		s1 = new Student("James", 437);
 		assertFalse(s.equals(s1));
 	}
-
+	
 	@Test
 	public void hashTest(){
 		s = new Student("Paul", 437);
@@ -98,7 +98,7 @@ public class StudentTest {
 		assertTrue(s.equals(s1));
 		assertTrue(s.hashCode()==s1.hashCode());
 	}
-
+	
 	@Test
 	public void hashFailTest(){
 		s = new Student("Paul", 437);
@@ -106,7 +106,7 @@ public class StudentTest {
 		assertFalse(s.equals(s1));
 		assertFalse(s.hashCode()==s1.hashCode());
 	}
-
+	
 	@Test
 	public void toStringTest(){
 		s = new Student("Paul", 437);
