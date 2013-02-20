@@ -13,10 +13,6 @@ public class StudentTest {
 	public Student s1;
 	public Student s2;
 	
-	@Test
-	public void {
-		assertTrue(true);
-	}
 	
 	@Test
 	public void newFailingTest() {
