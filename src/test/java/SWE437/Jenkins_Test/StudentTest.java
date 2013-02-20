@@ -104,7 +104,7 @@ public class StudentTest {
 	
 	@Test
 	public void toStringTest(){
-		s = new Student("Paul", 437);
+		s = new Student("Paul", 430);
 		assertEquals("Paul 437", s.toString());
 	}
 }
