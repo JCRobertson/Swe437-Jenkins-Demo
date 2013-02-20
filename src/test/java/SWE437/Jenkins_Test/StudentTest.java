@@ -41,7 +41,7 @@ public class StudentTest {
 	@Test
 	public void studentNumberGetter(){
 		s = new Student("James", 12);
-		assertEquals(10, s.getFavoriteNumber());
+		assertEquals(12, s.getFavoriteNumber());
 	}
 
 	@Test
