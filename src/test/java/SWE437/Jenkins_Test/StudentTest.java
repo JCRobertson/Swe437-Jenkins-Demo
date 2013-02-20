@@ -13,7 +13,6 @@ public class StudentTest {
 	public Student s1;
 	public Student s2;
 	
-	
 	@Test
 	public void newFailingTest() {
 		// Instructor special!
@@ -82,7 +81,7 @@ public class StudentTest {
 	
 	@Test
 	public void notEqualTest(){
-		s = new Student("Paul", 436);
+		s = new Student("Paul", 437);
 		s1 = new Student("James", 437);
 		assertFalse(s.equals(s1));
 	}
