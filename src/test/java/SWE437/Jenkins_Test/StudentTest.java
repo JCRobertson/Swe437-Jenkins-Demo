@@ -82,7 +82,7 @@ public class StudentTest {
 	
 	@Test
 	public void notEqualTest(){
-		s = new Student("Paul", 437);
+		s = new Student("Paul", 436);
 		s1 = new Student("James", 437);
 		assertFalse(s.equals(s1));
 	}
