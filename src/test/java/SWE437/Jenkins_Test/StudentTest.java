@@ -89,7 +89,7 @@ public class StudentTest {
 	@Test
 	public void hashTest(){
 		s = new Student("Paul", 437);
-		s1 = new Student("Paul1", 4371);
+		s1 = new Student("Paul", 437);
 		assertTrue(s.equals(s1));
 		assertTrue(s.hashCode()==s1.hashCode());
 	}
