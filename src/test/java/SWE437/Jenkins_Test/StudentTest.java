@@ -76,7 +76,7 @@ public class StudentTest {
 	@Test
 	public void equalsNotStudentTest(){
 		s = new Student("Paul", 76);
-		assertTrue(s.equals("Paula"));
+		assertFalse(s.equals("Paula"));
 	}
 
 	@Test
