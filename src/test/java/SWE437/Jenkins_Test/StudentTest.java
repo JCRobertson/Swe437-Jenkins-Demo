@@ -19,7 +19,7 @@ public class StudentTest {
 		// This new version should work
 		// Let's fail again!
 		// And now fixing it.
-		assertTrue(3==(1+1+0));
+		assertTrue(3==(1+1+1));
 	}
 
 	@Test (expected = IllegalArgumentException.class)
