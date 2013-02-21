@@ -35,7 +35,7 @@ public class Student {
 		}
 
 		public int getFavoriteNumber() {
-			return favoriteNumber
+			return 0;
 		}
 
 		@Override
