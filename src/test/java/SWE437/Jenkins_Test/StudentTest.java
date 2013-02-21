@@ -107,7 +107,8 @@ public class StudentTest {
 		s = new Student("Paul", 437);
 		assertEquals("Paul 437", s.toString());
 	}
-	@Test
+	
+	@Test (expected = IllegalArgumentException.class)
 	public void numberOverFlow(){
 		s = new Student("Joe", 2147483647 + 1);
 	}
